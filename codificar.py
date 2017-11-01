@@ -28,21 +28,23 @@ b = "qNhPWA!¿9kxmgFY!yN¿dgXñN¿tM$3S2I;hyUm&kqMa9ArX5Cx4ÇWRyj3¿ñ1xBoñI@kW
 n = "0¿t2nkñaN&mU5F/Zl$1Çy6now2jH6ya?s*%^*a5cUAQb6pJo2rR^iBrIWÑSXOy5!cNA6f^Zjabk¿;J5@i2Fkx??jF0GNy@kIddN%"
 m = "ytis65X4?ÑAht$F6?ZLW0ñÇaq36&WQxfLo8r2D$i^^ÇG$ChlfdDCNÇW5achZbtqyg/ltÇ¿5P4FV9tGK1Ñ7ñfSPYC*J90?c^2QUhL"
 
-def iniciar():
+
+def iniciar(directorio):
+ fitxategia = input("fitxategiaren izena jarri:")
  kodi_deskodi = input("kodifikatu edo deskodificatu ko/des:")
- os.chdir("D:\phyton\programak\kodifikar");
+ os.chdir(directorio);
  if kodi_deskodi == "ko":
-  fichategia = open ('seco.txt','rt')
+  fichategia = open ('iker.txt','rt')
   irakurri =  fichategia.read()
   lotura = kodifikatu(irakurri)
   fichategia.close()
-  idatzi(lotura)
+  idatzi(lotura,directorio)
  elif kodi_deskodi == "des":
-  fichategia = open ('seco.txt','rt')
+  fichategia = open ('iker.txt','rt')
   irakurri =  fichategia.read()
   lotura = deskodifikatu(irakurri)
   fichategia.close()
-  idatzi(lotura)
+  idatzi(lotura,directorio)
  
 def kodifikatu(irakurri):
  luzehera = len(irakurri)
@@ -207,11 +209,12 @@ def deskodifikatu(irakurri):
  return lotura
  
  
-def idatzi(lotura):
- os.chdir("D:\phyton\programak\kodifikar")
- fichategia = open ('seco.txt','wt')
+def idatzi(lotura,directorio):
+ os.chdir(directorio)
+ fichategia = open ('iker.txt','wt')
  fichategia.write(lotura)
  fichategia.close()
  
 #programa
-iniciar()
+directorio = input("aukeratu directorio bat fitsategiak kodifikatzeko edo deskodifikatzeko:")
+iniciar(directorio)
