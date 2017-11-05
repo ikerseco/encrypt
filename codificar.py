@@ -34,13 +34,13 @@ def iniciar(directorio):
  kodi_deskodi = input("kodifikatu edo deskodificatu ko/des:")
  os.chdir(directorio);
  if kodi_deskodi == "ko":
-  fichategia = open ('iker.txt','rt')
+  fichategia = open (fitxategia,'rt')
   irakurri =  fichategia.read()
   lotura = kodifikatu(irakurri)
   fichategia.close()
   idatzi(lotura,directorio)
  elif kodi_deskodi == "des":
-  fichategia = open ('iker.txt','rt')
+  fichategia = open (fitxategia,'rt')
   irakurri =  fichategia.read()
   lotura = deskodifikatu(irakurri)
   fichategia.close()
