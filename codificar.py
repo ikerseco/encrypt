@@ -1,4 +1,38 @@
 import os
+
+codigo = [
+"vx66cLsxoñU3ñp1;MLf*ÑlkBt3&dmqmFYY4iopCÑwÇs?9Py¿V9KKN00cRPF?jgR;ydwj2QÑ0w*!0kKlz2A$aO8aÑVoYsJU7QiI2q",
+"Qm50QdjO@V7&9/QZCbrVM%VijS9%3;!xY3%b9Ñ*Çpg1Z1L^JbkSgs28@LMq¿ZnXmVR2uvyh5y?GU;M@RIWl33Z0zhbsXb%&WÑLS/",
+"VGUsaVi!lnnoQY6@L!AP/2&%/Mb&zsx8?26w5sXhD*$rD*VñCa7ZWB!DI2B¿7vArZ@FRtHWJMx4m2ñ¿^?f3bGzCxPPlmbCofR;cY",
+"UfGzaS3b7s¿/ñnLUu*ur4O?n¿KJXÇ6¿sSbhYUsQu78d&PY2A&Ck9w7uNcg1;xsc?rmKMyñ!k@Qbq9rnaO0b23S4P9UmMz¿w!3!Gn",
+"ñQBJÑs6YI2&FZX5mAwm7W¿BqmaInzVwk;G*B7w6D;rvtpIrbjp//NKmWhJidzmruNzymCy4ÇadBwmuyochfVcopVVCooo40Yk!VÇ",
+"fW!wjj@&Mh8C^oZD$XZDhm$!Zw^R&ngDNwh%dI3uiFHJP9mVGgqz&fRJ*mfNnosX/dI;yJWj$BKñcilu;MI?YNBXm$V&pBz?dRF7",
+"uB3FNZU4rJHphmJkIi!dC;SÇ*ñF8&RPswpaysXbN¿2xpasB?BkiLIpGgFnjPGDVZ3319/6nbjOt3;UF4zfk!fnpvttFLcJaxCl^w",
+"PjLG9ugKX¿wGM!F!zZVp1&mas4%*sMGddoBL1i^iPBY¿yYzfm8$*H$^/iKVt$Ç5P4PcCnd8wWKlX%3i8q3!nxYJICDi0rlaDt0qn",
+"KwVZtcy!7yuI/OBWd*?X9j66Uc0VX2YoCñÑwUL18qpcD8ñSb!IJz^kFG4JNuw?¿%l^whaMNI1JqK/z?UQ$O8$5If1^IRD6q&nj8I",
+"idÑ2;NU$6ÇItAzSHbwQsvV6$o0dioR!&?uwPOIah102AYif¿cHOwOt7;8;7pXa^%NLXjC9ofQ7XOV&tÇI$Çcx*WA$;%OñpKdScx6fmk",
+"oP;SzbqDX!aZg?G9dUAwN@95Ls?¿7K?iS2SDLtrAO*R¿uQ8;VMñ6YdNuN3KCBnIÇzO6I;NstA1$bVqHY¿!jx@46Mzg0p¿nz08iXJ",
+"u6kosZROv0$;6ARbLZt780nUo^VÇ2u?4zXq7UtÇ8Dddc¿p;2WLV!B0hpxñ%qFWuWs5;llh*%DsfJUo!wPbV78!g!/0Ñl1/IwMqqM",
+"3GVqD;ZQ0UF9ls&@H%bOUKumZÑMX1K4!qVDÇQs$Pkqt!vLmD9DñXQ*5*?ni90&C$ml$BLkhBKq0HA3CaLQGi1FBF2QuIdrÑXhMHV",
+"4/ñlhQyXazUG0yÇQmntgMcas^mjbÇz^9C0ij98J5HN40fÇvsM5p4%dVl;SsudP0xUCGJñ^jW6ñUqIwx$mtdÑÇñziAj*;vIGoYÇZb",
+"J¿sñy¿VYQ%uB5pQÑM4Ç4cGgAf6%rGÑqñrg8JñPAC3HaNV;kBlOo¿twzBaQ3&RPaÇZ$/zym^LL9fvGJÇfXO6v2QDwÇuYxñPw;Vwvc",
+"sd^ñ39rpÇ&08axDCyWz¿4d6AÇN6s01Kx2y%s0ks0NiG8O&dÑq/6¿7%d9;7ÇcgR*sFtV55NwxjtL2*PV3jshHiX5¿zQP/Y7K7m!2¿",
+"rtñ4KlÑgyÇ2tAnar4*7xb*s;yXOuBa2WcO4@!pFZCqYGKkq65Zom%;vPYClO5cHxOFV/n0K/Pk9u3oOñ4k;GQzM¿5?wvOt@s&XDF",
+"jHhNcO$PN9b1pajRSUÑx;*YySrpn93&5HC&S/4i@Çg1bR@arM*ñmaV0nrxdJO4watvG7Psf?9qf7XgKp@ÑÑm4nOKGIN*D^JkkFnt",
+"7SBSd$D?9xO^hlznCX!sbZDs%@PfrfgwIkd6&6gyNÑ3M^gvZ^rFh5;xY?jx@w&MZ¿SBCIJj22hO/27wV4GX4ñKlñcwHCu;ss9rDn",
+"¿&R5xuxCoÇm^0qKkF9g4y41¿ñm6WFk9lhVZÑ&IuLb?FdzxmB;ogoñPfFkcJaf@LGSf7!jSKB?l;nwDakCQ?!pMn$JkAgzpIIIMCn",
+"¿wqA%YK37192p;u!*F;o!h¿MOgU;fHCAQmF2y2MK4Md5wXGB9gb5MvmisvqiSj%&?h?^%HZx7QKziVnwuÇyS@v9UBncuhYHY*CjA",
+"ztR1CJH@ñp%$Zoma*R$VPjxNPRSnFdZZkiw&RY7klIKZoI^6Ñ0W7OZPcgd?cU2s%y1?5xNI36sI2GQQ8odwp;?mR@96Ñ%hXÑmS2J",
+"3CIqOPS3A7XBZb&LrasYMo0h4M?3ZQfdyjf3F8Ç?frhN@/nGP3¿?!87RS*J$6bMzK$kPkKR?d99g3QñB4XQmr%u*UYxÇy7%vBpxo",
+"ks&OfYxOoVru$Nts&h1fÇo9P/FKFCvÇ5Vp^ihdK!FUqnV9NXF$Ç*ñsaBiUK$69S&@2l25IWWdmvRÑawsOhMDNYhV/;z^lG3d$Onm",
+"Sñ7DC!M$9DB68hñu?uu9GÑZLPmñyrLKDZ71ZFr¿!Ñ0dhxrC1YzCisÇN1FJq6IZrxr8k;kXSC4kgkLlLpv8ox0&InKÇtNcQUgv%nD",
+"ARJotyYa^OuB39Fi%?qBX4GpNPD2XJSR^ñÇj@xa?d&HnZ!g1m4M6rbcñsXMmt4F*!vlrjCUr^6caGDOIlÑpVHdhpd¿66vtzwU/rD",
+"NxOgñxfñnñCnjsdwx22v@$NLdAcUq$1UWjkÇoX?I&H?4Dh$3kñ8;ñHIg$fwD;ÇrNsIHuYi&yLHvQ04&9kP^6J$qHlIF1kVf5fbI$",
+"HIkJAG/VK*xlM;%p9LxcoKtnMsJ6*L8WBÑ7Ç¿nZ%CNVJw9GZaÑjñ7QKiarrtWlXZ2%dD0ÇzJrXf5ñBV6jd!¿ipIBwM&QhWP1OÇxL"
+]
+
+caracteres = [" ","q","w","e","r","t","y","u","i","o","p","a","s","d","f","g","h","j","k","l","ñ","z","x","c","v","b","n","m"]
+"""
 es = "vx66cLsxoñU3ñp1;MLf*ÑlkBt3&dmqmFYY4iopCÑwÇs?9Py¿V9KKN00cRPF?jgR;ydwj2QÑ0w*!0kKlz2A$aO8aÑVoYsJU7QiI2q"
 q = "Qm50QdjO@V7&9/QZCbrVM%VijS9%3;!xY3%b9Ñ*Çpg1Z1L^JbkSgs28@LMq¿ZnXmVR2uvyh5y?GU;M@RIWl33Z0zhbsXb%&WÑLS/"
 w = "VGUsaVi!lnnoQY6@L!AP/2&%/Mb&zsx8?26w5sXhD*$rD*VñCa7ZWB!DI2B¿7vArZ@FRtHWJMx4m2ñ¿^?f3bGzCxPPlmbCofR;cY"
@@ -27,191 +61,56 @@ v = "@s?pchR9CSBocqxp3ZLIC;usubRNCg/Ç?F64uWYcKh;4sÑ8ruSWWl!r9VO3lNHGrro?;VñkQ
 b = "qNhPWA!¿9kxmgFY!yN¿dgXñN¿tM$3S2I;hyUm&kqMa9ArX5Cx4ÇWRyj3¿ñ1xBoñI@kW¿d$C2hW^uUNwhZNlWqsÇa8Km6MlQ@A¿h4"
 n = "0¿t2nkñaN&mU5F/Zl$1Çy6now2jH6ya?s*%^*a5cUAQb6pJo2rR^iBrIWÑSXOy5!cNA6f^Zjabk¿;J5@i2Fkx??jF0GNy@kIddN%"
 m = "ytis65X4?ÑAht$F6?ZLW0ñÇaq36&WQxfLo8r2D$i^^ÇG$ChlfdDCNÇW5achZbtqyg/ltÇ¿5P4FV9tGK1Ñ7ñfSPYC*J90?c^2QUhL"
-
+"""
 
 def iniciar(directorio):
  fitxategia = input("fitxategiaren izena jarri:")
  kodi_deskodi = input("kodifikatu edo deskodificatu ko/des:")
  os.chdir(directorio);
  if kodi_deskodi == "ko":
-  fichategia = open (fitxategia,'rt')
+  fichategia = open(fitxategia,'rt')
   irakurri =  fichategia.read()
   lotura = kodifikatu(irakurri)
   fichategia.close()
   idatzi(lotura,directorio)
  elif kodi_deskodi == "des":
   fichategia = open (fitxategia,'rt')
-  irakurri =  fichategia.read()
+  irakurri =  fichategia.read() 
   lotura = deskodifikatu(irakurri)
+  print(lotura)
   fichategia.close()
   idatzi(lotura,directorio)
  
+#kodificatu 
 def kodifikatu(irakurri):
  luzehera = len(irakurri)
+ luzehera2 = len(caracteres)
  lotura = ""
- for x in range(luzehera):
+ for x in range(luzehera): 
   letrak = irakurri[x]
-  if letrak == " ":
-   lotura += es
-  if letrak == "q":
-   lotura += q
-  if letrak == "w":
-   lotura += w
-  if letrak == "e":
-   lotura += e 
-  if letrak == "r":
-   lotura += r 
-  if letrak == "t":
-   lotura += t
-  if letrak == "y":
-   lotura += y
-  if letrak == "u":
-   lotura += u
-  if letrak == "i":
-   lotura += i
-  if letrak == "o":
-   lotura += o
-  if letrak == "p":
-   lotura += p
-  if letrak == "a":
-   lotura += a 
-  if letrak == "s":
-   lotura += s 
-  if letrak == "d":
-   lotura += d
-  if letrak == "f":
-   lotura += f 
-  if letrak == "g":
-   lotura += g
-  if letrak == "h":
-   lotura += h 
-  if letrak == "j":
-   lotura += j
-  if letrak == "k":
-   lotura += k
-  if letrak == "l":
-   lotura += l 
-  if letrak == "ñ":
-   lotura += ñ
-  if letrak == "z":
-   lotura += z
-  if letrak == "c":
-   lotura += c 
-  if letrak == "v":
-   lotura += v 
-  if letrak == "b":
-   lotura += b
-  if letrak == "n":
-   lotura += n
-  if letrak == "m":
-   lotura += m
-  if letrak == "x":
-   lotura += xi  
+  for t in range(luzehera2):
+   if caracteres[t] == letrak:
+    lotura += codigo[t] 
  return lotura
 
+#descodificatu
 def deskodifikatu(irakurri):
  luzehera = len(irakurri)
- le = "" 
+ luzehera2 = len(codigo)
+ le = ""
  lotura = ""
  for x in range(luzehera):
-  letrak = irakurri[x]
-  le += letrak
-  if le == s:
-   lotura += "s"
-   le = ""
-  if le == c:
-   lotura += "c"
-   le = ""
-  if le == m:
-   lotura += "m"
-   le = ""
-  if le == es:
-   lotura += " "
-   le = ""
-  if le == q:
-   lotura += "q"
-   le = ""
-  if le == w:
-   lotura += "w"
-   le = ""
-  if le == e :
-   lotura += "e"
-   le = ""
-  if le == r:
-   lotura += "r"
-   le = ""
-  if le == t:
-   lotura += "t"
-   le = ""
-  if le == y:
-   lotura += "y"
-   le = ""
-  if le == u:
-   lotura += "u"
-   le = ""
-  if le == i:
-   lotura += "i"
-   le = ""
-  if le == o:
-   lotura += "o"
-   le = ""
-  if le == p:
-   lotura += "p"
-   le = ""
-  if le == a:
-   lotura += "a"
-   le = ""
-  if le == d:
-   lotura += "d"
-   le = ""
-  if le == f:
-   lotura += "f"
-   le = ""
-  if le == g:
-   lotura += "g"
-   le = ""
-  if le == h:
-   lotura += "h"
-   le = ""
-  if le == j:
-   lotura += "j"
-   le = ""
-  if le == k:
-   lotura += "k"
-   le = ""
-  if le == l:
-   lotura += "l"
-   le = ""
-  if le == ñ:
-   lotura += "ñ"
-   le = ""
-  if le == z:
-   lotura += "z"
-   le = ""
-  if le == x:
-   lotura += "x"
-   le = ""
-  if le == c:
-   lotura += "c"
-   le = ""
-  if le == v:
-   lotura += "v"
-   le = ""
-  if le == b:
-   lotura += "b"
-   le = ""
-  if le == n:
-   lotura += "n"
-   le = ""
-  if le == m:
-   lotura += "m"
-   le = ""
+  le += irakurri[x]
+  for t in range(luzehera2):
+   if le == codigo[t]:
+    lotura += caracteres[t]
+    le = ""
  return lotura
  
  
 def idatzi(lotura,directorio):
  os.chdir(directorio)
- fichategia = open ('iker.txt','wt')
+ fichategia = open ('a.txt','wt')
  fichategia.write(lotura)
  fichategia.close()
  
