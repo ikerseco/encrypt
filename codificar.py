@@ -28,10 +28,22 @@ codigo = [
 "Sñ7DC!M$9DB68hñu?uu9GÑZLPmñyrLKDZ71ZFr¿!Ñ0dhxrC1YzCisÇN1FJq6IZrxr8k;kXSC4kgkLlLpv8ox0&InKÇtNcQUgv%nD",
 "ARJotyYa^OuB39Fi%?qBX4GpNPD2XJSR^ñÇj@xa?d&HnZ!g1m4M6rbcñsXMmt4F*!vlrjCUr^6caGDOIlÑpVHdhpd¿66vtzwU/rD",
 "NxOgñxfñnñCnjsdwx22v@$NLdAcUq$1UWjkÇoX?I&H?4Dh$3kñ8;ñHIg$fwD;ÇrNsIHuYi&yLHvQ04&9kP^6J$qHlIF1kVf5fbI$",
-"HIkJAG/VK*xlM;%p9LxcoKtnMsJ6*L8WBÑ7Ç¿nZ%CNVJw9GZaÑjñ7QKiarrtWlXZ2%dD0ÇzJrXf5ñBV6jd!¿ipIBwM&QhWP1OÇxL"
+"HIkJAG/VK*xlM;%p9LxcoKtnMsJ6*L8WBÑ7Ç¿nZ%CNVJw9GZaÑjñ7QKiarrtWlXZ2%dD0ÇzJrXf5ñBV6jd!¿ipIBwM&QhWP1OÇxL",
+"i6gkG7Zcv/H&qKQp9XcN2rgj5Lz1ktBÑ&5d15ZJkV9ÇUIUkC/ppÇ9bgv!82s7M@fUWXvoo?XmZgbIKñpOIZK5qSUns;K5bPp*N2u",
+"2lu17¿ñsvcQxñD9mvrr1Yu$bDLR1^Gn*5d?/QUtQVW9vñpNFa1*jp;sR&yRnohbbdRx%^LoO5gZSqZI2GO!PtbFvzdhdñKKo/XUÑ",
+"$2RHfJa@ildRzUiS4VjZSLA49oNPfVZsxkGRAF&CJFfbQJCCAo;bUi@zrd&gxUUhpU6ÑDuS$!prKhgj0c&5RZ4¿X/FAuÑ7hvYx0*",
+"Fn$wcD0ag¿xIg;lshSPBF5w¿DSFR?wYhÑo1%iw3Ñ@s3oI3/o1UJ8snñF5K^IY;lGtyuJ;6RXz!¿kpv90¿4vyHidÇxiwGwFt0*m^8",
+"iA¿dJC5u;xbQ74OP;S1A9L/d3@Gz8k@dcN&J6MmvJP&ziwpw%ñ2PB$Dx201&5D7tlk/?OxX@*z/aSS6c9Xb9huFÑlm0ññ@$Lpt2R",
+"trIdZQYi%JW;d0Vyv%tK¿OV1hXbl1Sn9VJyB7fañ*UR?13d0!7OgsÑCk?2y¿ihtdfQR6LDxKxMsdt!lM$naHYO!Q3?UC7W1b1cko",
+"t$hVC^¿%anMF5LRyz8HhbIPC!g@x7!HshM68^tÑLSH%qÑj^cX&apSXÑñ@awOy$^ytX2yRMg/1XÇPC@LñqWaDUN/$Kr6bFsdP9/fa",
+"v!839wyZDh6ñ9hxm;nnu8MW;ÑH¿479¿xQ3!iZñf7yÇQs&7tNXjm/Rq7GgK1ÇlRXOowNL!??l;uHnJpñK4¿84c2Gf7oXS*oAHD;Y4",
+"HOl3Çc4R;HV/rH6fL1mblMñ@DPOSXn1/CFscG*7aXsyUF*t7GnVHywÑc@?@3bgvptdV?5Of5¿ÇLspOPP1mU!G/n2haÇBDId70Qc@",
+"3^o?GQDH/¿52z^aKGg6rGVxJz^*5Sh7!5PiG¿&Ç;a;*YÇwa&FpA09K%s6AuLULdPYYcrñ6k80wXJ4xAoYGnLÇ1BbCWzIRBc%K&CX",
+"JcCpZKD$ra$FoXY?2fH@8ÇXkKfNjm%sN2fg5dN*kÑ*YPÇVOZO8vÇj¿@cOFXitxnñf5y@0ySmWG4F^UK1qV$$A44IMcNOhiA83nxc",
+"&QrAO5XG5fk0J9PIBvb9Sn%uñIDPhAK?69914^MbyJiVu;c/hiL2$XWJNZXGp;QkzcLHI7arQ5FSNÑOQkiIB5B!8vu$xHMZYj5kt"
 ]
 
-caracteres = [" ","q","w","e","r","t","y","u","i","o","p","a","s","d","f","g","h","j","k","l","ñ","z","x","c","v","b","n","m"]
+caracteres = [" ","q","w","e","r","t","y","u","i","o","p","a","s","d","f","g","h","j","k","l","ñ","z","x","c","v","b","n","m","1","2","3","4","5","6","7","8","9","0",":"]
 """
 es = "vx66cLsxoñU3ñp1;MLf*ÑlkBt3&dmqmFYY4iopCÑwÇs?9Py¿V9KKN00cRPF?jgR;ydwj2QÑ0w*!0kKlz2A$aO8aÑVoYsJU7QiI2q"
 q = "Qm50QdjO@V7&9/QZCbrVM%VijS9%3;!xY3%b9Ñ*Çpg1Z1L^JbkSgs28@LMq¿ZnXmVR2uvyh5y?GU;M@RIWl33Z0zhbsXb%&WÑLS/"
@@ -72,14 +84,14 @@ def iniciar(directorio):
   irakurri =  fichategia.read()
   lotura = kodifikatu(irakurri)
   fichategia.close()
-  idatzi(lotura,directorio)
+  idatzi(lotura,directorio,fitxategia)
  elif kodi_deskodi == "des":
   fichategia = open (fitxategia,'rt')
   irakurri =  fichategia.read() 
   lotura = deskodifikatu(irakurri)
   print(lotura)
   fichategia.close()
-  idatzi(lotura,directorio)
+  idatzi(lotura,directorio,fitxategia)
  
 #kodificatu 
 def kodifikatu(irakurri):
@@ -108,9 +120,9 @@ def deskodifikatu(irakurri):
  return lotura
  
  
-def idatzi(lotura,directorio):
+def idatzi(lotura,directorio,fitxategia):
  os.chdir(directorio)
- fichategia = open ('a.txt','wt')
+ fichategia = open (fitxategia,'wt')
  fichategia.write(lotura)
  fichategia.close()
  
