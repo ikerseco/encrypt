@@ -78,7 +78,7 @@ m = "ytis65X4?ÑAht$F6?ZLW0ñÇaq36&WQxfLo8r2D$i^^ÇG$ChlfdDCNÇW5achZbtqyg/ltÇ
 def iniciar(directorio):
  fitxategia = input("fitxategiaren izena jarri:")
  kodi_deskodi = input("kodifikatu edo deskodificatu ko/des:")
- os.chdir(directorio);
+ os.chdir(directorio)
  if kodi_deskodi == "ko":
   fichategia = open(fitxategia,'rt')
   irakurri =  fichategia.read()
